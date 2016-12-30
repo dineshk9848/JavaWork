@@ -43,6 +43,9 @@ public class SimpleServlet extends HttpServlet {
 		Browsing appn diff features of appn. 
 		*/
 		HttpSession session = request.getSession();
+		
+		/*Contexts are same like sessions but it remembers the data values for different sessions where as in sessions it 
+		 * can only remember the values through it session with one single user*/
 		ServletContext context = request.getServletContext();
 		if(userName != "" && userName != "null"){
 		
